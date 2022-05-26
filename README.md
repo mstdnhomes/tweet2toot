@@ -8,6 +8,17 @@ cp conf.sample.ini conf.ini
 nano conf.ini
 python3 run.py
 ```
+If there is errors when installing the requirements:
+```shell
+error in feedparser setup command: use_2to3 is invalid.
+```
+That is because feedparser==5.2.1 relies on 2to3  
+but 2to3 support has been removed from setuptools since 58.0.0
+
+SO using this:
+```python
+pip install "setuptools<58"
+```
 
 Please install FFmpeg if you need support for twitter's GIFs.
 
