@@ -1,5 +1,7 @@
 # tweet2toot
 
+> Suggest to use `3.1 < python < 3.9`. Because the `base64.decodestring()` function has been deprecated since Python 3.1, and removed in Python 3.9. 
+
 A simple script that transport tweets from twitter to Mastodon. Based on the Twitter RSS feed powered by [RSSHub](https://rsshub.app).
 
 ```
@@ -30,7 +32,7 @@ sudo apt install ffmpeg
 dnf install https://rpmfind.net/linux/centos/8-stream/PowerTools/aarch64/os/Packages/SDL2-2.0.10-2.el8.aarch64.rpm
 dnf install -y https://download1.rpmfusion.org/free/el/rpmfusion-free-release-8.noarch.rpm
 dnf -y install ffmpeg
-# 验证ffmpeg
+# to verify ffmpeg
 ffmpeg -version
 ```
 
